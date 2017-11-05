@@ -8,7 +8,7 @@ public class FindDisappearedNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {4,3,2,7,8,2,3,1};
+		int[] arr = {1,1};
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		list = new FindDisappearedNumbers().findDisappearedNumbers(arr);
@@ -23,7 +23,7 @@ public class FindDisappearedNumbers {
 		{
 			num.put(arr[i], 1);
 		}
-		for(int i=1;i<=num.size();i++)
+		for(int i=1;i<=arr.length;i++)
 		{
 			if(!num.containsKey(i))
 			{
